@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/start.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:get/route_manager.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,11 +28,9 @@ class _HomePageState extends State<HomePage> {
                 'Enjoy the best restuarants or get what you need from nearby stores delivered',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.montserrat(
-                  textStyle: Theme.of(context).textTheme.displayLarge,
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
                   color: const Color(0xFF313642),
-                  
                 ),
               ),
             ),
@@ -67,7 +67,10 @@ class _HomePageState extends State<HomePage> {
                       padding: MaterialStatePropertyAll(EdgeInsets.all(5)),
                       textStyle:
                           MaterialStatePropertyAll(TextStyle(fontSize: 25))),
-                  onPressed: () {},
+                  onPressed: () {
+                   Get.to(()=>const startapp());
+                    
+                  },
                   child: const Text('Get Started')),
             ),
           ),
