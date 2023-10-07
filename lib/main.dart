@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/open.dart';
+import 'package:food_app/screens/open.dart';
 import 'package:get/route_manager.dart';
 
 void main() {

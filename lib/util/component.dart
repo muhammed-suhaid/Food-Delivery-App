@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TextButtonWithFunction extends StatelessWidget {
-  String text;
-  double height;
-  double width;
-  Color color;
-  Color textcolor;
-  void Function() buttonFunction;
+  final String text;
+  final double height;
+  final double width;
+  final Color color;
+  final Color textcolor;
+  final void Function() buttonFunction;
 
-  TextButtonWithFunction({
+  const TextButtonWithFunction({
     super.key,
     required this.text,
     required this.height,
@@ -31,10 +31,10 @@ class TextButtonWithFunction extends StatelessWidget {
           borderRadius: BorderRadius.circular(6),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.5), // Shadow color
-              spreadRadius: 2, // Spread radius
-              blurRadius: 5, // Blur radius
-              offset: const Offset(0, 3), // Offset in the Y direction
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 5,
+              offset: const Offset(0, 3),
             ),
           ],
         ),

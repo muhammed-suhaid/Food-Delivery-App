@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/start.dart';
+import 'package:food_app/screens/start.dart';
 import 'package:food_app/util/component.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/route_manager.dart';
@@ -57,14 +57,15 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: TextButtonWithFunction(
-                      text: "Get Started",
-                      height: 55,
-                      width: 358,
-                      color:  const Color(0xFFFE724C),
-                      buttonFunction: () {
-                        Get.to(()=>const startapp());
-                      }, textcolor: Colors.white,
-                    ),
+              text: "Get Started",
+              height: 55,
+              width: 358,
+              color: const Color(0xFFFE724C),
+              buttonFunction: () {
+                Get.to(() => const StartApp());
+              },
+              textcolor: Colors.white,
+            ),
           ),
         ],
       ),

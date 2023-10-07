@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/util/component.dart';
-import 'package:food_app/util/text.dart';
-import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class startapp extends StatefulWidget {
-  const startapp({super.key});
+class StartApp extends StatefulWidget {
+  const StartApp({super.key});
 
   @override
-  State<startapp> createState() => _startappState();
+  State<StartApp> createState() => _StartAppState();
 }
 
-class _startappState extends State<startapp> {
+class _StartAppState extends State<StartApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +47,7 @@ class _startappState extends State<startapp> {
                     ),
                   ],
                 ),
-              ), 
+              ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Row(
@@ -122,8 +120,9 @@ class _startappState extends State<startapp> {
                       text: "Log In",
                       height: 55,
                       width: 358,
-                      color:  const Color(0xFFFE724C),
-                      buttonFunction: () {}, textcolor: Colors.white,
+                      color: const Color(0xFFFE724C),
+                      buttonFunction: () {},
+                      textcolor: Colors.white,
                     ),
                     const Padding(
                       padding: EdgeInsets.all(8.0),
@@ -133,23 +132,25 @@ class _startappState extends State<startapp> {
                       text: "Continue With Facebook",
                       height: 55,
                       width: 358,
-                      color:  const Color(0xFF1877F2),
-                      buttonFunction: () {}, textcolor: Colors.white,
+                      color: const Color(0xFF1877F2),
+                      buttonFunction: () {},
+                      textcolor: Colors.white,
                     ),
-                    
                     TextButtonWithFunction(
-                      text: "Continue With Google", 
+                      text: "Continue With Google",
                       height: 55,
                       width: 358,
-                      color:  Colors.white,
-                      buttonFunction: () {}, textcolor: Colors.black,
+                      color: Colors.white,
+                      buttonFunction: () {},
+                      textcolor: Colors.black,
                     ),
                     TextButtonWithFunction(
                       text: "Continue With Apple",
                       height: 55,
                       width: 358,
                       color: const Color(0xFF313642),
-                      buttonFunction: () {}, textcolor: Colors.white,
+                      buttonFunction: () {},
+                      textcolor: Colors.white,
                     ),
                   ],
                 ),
